@@ -1,4 +1,5 @@
-# current bash profile
+# personal backup of current bash profile
+
 
 export PS1="🍜  \[\e[31m\]\u\[\e[m\]:[/\W]$ "
 # 🍜  nictamura:[/bash-profile]$
@@ -9,6 +10,7 @@ alias ls='ls -GFh'
 alias cd..="cd .."
 alias cd...="cd ../.."
 alias cd....="cd ../../.."
+# Go back X directory levels
 
 function cd() {
   builtin cd $1 && ls
@@ -18,4 +20,4 @@ function cd() {
 function mkcd() {
   mkdir -p $1 && cd $1;
 }
-# mkdir and cd into it 
+# mkdir and cd into it
